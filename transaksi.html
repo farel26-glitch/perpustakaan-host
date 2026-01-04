@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaksi Perpustakaan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Transaksi Perpustakaan</h1>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="profil.html">Profil</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<main>
+    <h2>Form Transaksi</h2>
+
+    <form id="formTransaksi" onsubmit="return validasiTransaksi()">
+        <label>Nama Transaksi</label>
+        <input type="text" id="nama">
+
+        <label>Jumlah Buku</label>
+        <input type="number" id="jumlah">
+
+        <label>Kategori</label>
+        <select id="kategori">
+            <option value="">-- Pilih --</option>
+            <option>Fiksi</option>
+            <option>Non Fiksi</option>
+            <option>Pendidikan</option>
+        </select>
+
+        <button type="submit">Simpan</button>
+    </form>
+
+    <h2>Daftar Transaksi</h2>
+    <table>
+        <tr>
+            <th>Nama Transaksi</th>
+            <th>Jumlah</th>
+            <th>Kategori</th>
+        </tr>
+        <tr>
+            <td>Peminjaman Buku</td>
+            <td>2</td>
+            <td>Pendidikan</td>
+        </tr>
+    </table>
+</main>
+
+<footer>
+    <p>© 2026 Aplikasi Perpustakaan</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
